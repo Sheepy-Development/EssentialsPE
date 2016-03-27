@@ -1,553 +1,542 @@
-name: EssentialsPE
+name: MNetworkPE
 main: EssentialsPE\Loader
-version: 2.0.0
+version: 1.0.0
 api: 2.0.0
-author: LegendsOfMCPE Team
-website: https://github.com/LegendOfMCPE/EssentialsPE
+author: CyroPE Team
+website: CyroWeb
 
 permissions:
-    essentials:
+    MNetwork:
         default: false
-        description: "Allow to access to every EssentialsPE feature"
+        description: "Allow to access to every MNetworkPE feature"
         children:
-            essentials.ban:
+            MNetwork.ban:
                 default: false
                 description: "Ban utilities nodes"
                 children:
-                    essentials.ban.exempt:
+                    MNetwork.ban.exempt:
                         default: op
                         descrption: "Prevent the player from being banned"
-            essentials.colorchat:
+            MNetwork.colorchat:
                 default: op
                 description: "Allow to chat using colors!"
-            essentials.afk:
+            MNetwork.afk:
                 default: false
                 description: "Toggle the AFK status"
                 children:
-                    essentials.afk.use:
+                    MNetwork.afk.use:
                         default: true
                         description: "Change self AFK status"
-                    essentials.afk.other:
+                    MNetwork.afk.other:
                         default: op
                         description: "Change other's AFK status"
-                    essentials.afk.preventauto:
+                    MNetwork.afk.preventauto:
                         default: op
                         description: "Players with this permission will NOT be put into AFK after a period of inaction"
-                    essentials.afk.kickexempt:
+                    MNetwork.afk.kickexempt:
                         default: op
                         description: "Exempt the user from being auto kicked for AFK"
-            essentials.antioch:
+            MNetwork.antioch:
                 default: op
                 description: "Place live TNT at the spot you're looking at"
-            essentials.back:
+            MNetwork.back:
                 default: false
                 description: "Return to your previous spot before teleporting"
                 children:
-                    essentials.back.use:
+                    MNetwork.back.use:
                         default: op
                         description: "Return to your previous spot before teleporting"
-                    essentials.back.ondeath:
+                    MNetwork.back.ondeath:
                         default: op
                         description: "Return to the place where you die"
-            essentials.balance:
+            MNetwork.balance:
                 default: false
                 description: "Allow players to see their balance"
                 children:
-                    essentials.balance.use:
+                    MNetwork.balance.use:
                         default: true
                         description: "See your current balance"
-                    essentials.balance.other:
+                    MNetwork.balance.other:
                         default: op
                         description: "Let players to see other's balance"
-            essentials.bigtree:
+            MNetwork.bigtree:
                 default: op
                 description: "Spawns a big tree"
-            essentials.break:
+            MNetwork.break:
                 default: false
                 description: "Breaks the block you're looking at"
                 children:
-                    essentials.break.use:
+                    MNetwork.break.use:
                         default: op
                         description: "Breaks the block you're looking at"
-                    essentials.break.bedrock:
+                    MNetwork.break.bedrock:
                         default: op
                         description: "Allow to break Bedrock"
-            essentials.broadcast:
+            MNetwork.broadcast:
                 default: op
                 description: "Broadcast a message"
-            essentials.burn:
+            MNetwork.burn:
                 default: op
                 description: "Set a player on fire"
-            essentials.clearinventory:
+            MNetwork.clearinventory:
                 default: false
                 description: "Clear a player inventory"
                 children:
-                    essentials.clearinventory.use:
+                    MNetwork.clearinventory.use:
                         default: op
                         description: "Clear self inventory"
-                    essentials.clearinventory.other:
+                    MNetwork.clearinventory.other:
                         default: op
                         description: "Clear other's inventory"
-            essentials.compass:
+            MNetwork.compass:
                 default: true
                 description: "Display your current bearing direction"
-            essentials.condense:
+            MNetwork.condense:
                 default: true
                 description: "Compact items into blocks in your inventory!"
-            essentials.delhome:
+            MNetwork.delhome:
                 default: true
                 description: "Remove one of your homes"
-            essentials.delwarp:
+            MNetwork.delwarp:
                 default: op
                 description: "Remove a warp"
-            essentials.depth:
+            MNetwork.depth:
                 default: true
                 description: "Get your current height related to sea-level"
-            essentials.eco:
+            MNetwork.eco:
                 default: false
                 description: "Access to the /eco command"
                 children:
-                    essentials.eco.use:
+                    MNetwork.eco.use:
                         default: op
                         description: "Access the /eco command"
-                    essentials.eco.loan:
+                    MNetwork.eco.loan:
                         default: true
                         description: "Allow players to have negative balance"
-            essentials.essentials:
+            MNetwork.MNetwork:
                 default: op
-                description: "See the current Essentials version"
-            essentials.extinguish:
+                description: "See the current MNetwork version"
+            MNetwork.extinguish:
                 default: false
                 description: "Extinguish a player"
                 children:
-                    essentials.extinguish.use:
+                    MNetwork.extinguish.use:
                         default: op
                         description: "Extinguish yourself"
-                    essentials.extinguish.other:
+                    MNetwork.extinguish.other:
                         default: op
                         description: "Extinguish other players"
-            essentials.fly:
+            MNetwork.fly:
                 default: false
                 description: "Fly in Survival or Adventure mode!"
                 children:
-                    essentials.fly.use:
+                    MNetwork.fly.use:
                         default: op
                         description: "Switch your own fly mode"
-                    essentials.fly.others:
+                    MNetwork.fly.others:
                         default: op
                         description: "Make other players fly!"
-            essentials.gamemode:
+            MNetwork.gamemode:
                 default: op
                 description: "Change your gamemode!"
-            essentials.geoip:
+            MNetwork.geoip:
                 default: false
                 description: "GeoLocation nodes"
                 children:
-                    essentials.geoip.show:
+                    MNetwork.geoip.show:
                         default: op
                         description: "See other's location in the real world"
-                    essentials.geoip.hide:
+                    MNetwork.geoip.hide:
                         default: false
                         description: "Hide location from other users that 'have' permissions to see it"
-            essentials.getpos:
+            MNetwork.getpos:
                 default: false
                 description: "Get any player's position"
                 children:
-                    essentials.getpos.use:
+                    MNetwork.getpos.use:
                         default: op
                         description: "Get your position"
-                    essentials.getpos.other:
+                    MNetwork.getpos.other:
                         default: op
                         description: "Get other player's position"
-            essentials.god:
+            MNetwork.god:
                 default: false
                 description: "Prevent a player to take any damage"
                 children:
-                    essentials.god.use:
+                    MNetwork.god.use:
                         default: op
                         description: "Prevent you to take damage"
-                    essentials.god.other:
+                    MNetwork.god.other:
                         default: op
                         description: "Prevent other players to take damage"
-                    essentials.god.pvp:
+                    MNetwork.god.pvp:
                         default: op
                         description: "Let you attack other players while you're in god mode"
-            essentials.hat:
+            MNetwork.hat:
                 default: op
                 description: "Get some new cool headgear!"
-            essentials.heal:
+            MNetwork.heal:
                 default: false
                 description: "Heal yourself or other players"
                 children:
-                    essentials.heal.use:
+                    MNetwork.heal.use:
                         default: op
                         description: "Heal youself"
-                    essentials.heal.other:
+                    MNetwork.heal.other:
                         default: op
                         description: "Heal other players"
-            essentials.home:
+            MNetwork.home:
                 default: false
                 description: "Get to your home!"
-                children:
-                    essentials.home.use:
+                MNetwork.home.use:
                         default: true
                         description: "List or teleport to your homes"
-                    essentials.home.bed:
+                MNetwork.home.bed:
                         default: true
                         description: "Set a home where you last sleep"
-            essentials.item:
+            MNetwork.item:
                 default: op
                 description: "Gives yourself an item"
-            essentials.itemdb:
+            MNetwork.itemdb:
                 default: op
                 description: "Let you see information attached to an item"
-            essentials.itemspawn:
+            MNetwork.itemspawn:
                 default: op
                 description: "Let you spawn any item using /item"
                 children:
-                    essentials.itemspawn.item-all:
+                    MNetwork.itemspawn.item-all:
                         default: op
                         description: "Let you spawn any item"
-                    #essentials.itemspawn.exempt:
+                    #MNetwork.itemspawn.exempt:
                     #    default: op
                     #    description: "Allow the spawning of blacklisted items"
-            essentials.jump:
+            MNetwork.jump:
                 default: op
                 description: "Teleport you to the block you're looking at"
-            essentials.kickall:
+            MNetwork.kickall:
                 default: op
                 description: "Kick all the online players except the sender"
-            essentials.kill:
+            MNetwork.kill:
                 default: false
                 description: "Kill a player!"
                 children:
-                    essentials.kill.use:
+                    MNetwork.kill.use:
                         default: op
                         description: "Commit to suicide"
-                    essentials.kill.other:
+                    MNetwork.kill.other:
                         default: op
                         description: "Kill other players"
-            essentials.kit:
-                default: false
-                description: "Access to the /kit command"
-                children:
-                    essentials.kit.use:
-                        default: true
-                        description: "Access to the /kit command"
-                    essentials.kit.other:
-                        default: op
-                        description: "Give a kit to other players"
-            essentials.lightning:
+            MNetwork.lightning:
                 default: op
                 description: "Strike a lightning!"
-            essentials.more:
+            MNetwork.more:
                 default: op
                 description: "Get a stack of the item you're holding"
-            essentials.msg:
+            MNetwork.msg:
                 default: true
                 description: "Send private messages to other players"
-            essentials.mute:
+            MNetwork.mute:
                 default: false
                 description: "Mute a player from the chat"
                 chldren:
-                    essentials.mute.use:
+                    MNetwork.mute.use:
                         default: op
                         description: "Mute a player from the chat"
-                    essentials.mute.exempt:
+                    MNetwork.mute.exempt:
                         default: op
                         description: "Prevent a player from being muted"
-                    essentials.mute.notify:
+                    MNetwork.mute.notify:
                         default: true
                         description: "Tell a user until when is muted from the chat"
-            essentials.near:
+            MNetwork.near:
                 default: false
                 description: "Let you search for near players"
                 children:
-                    essentials.near.use:
+                    MNetwork.near.use:
                         default: op
                         description: "Display players near to you"
-                    essentials.near.other:
+                    MNetwork.near.other:
                         default: op
                         description: "Let you see who is near to another player"
-            essentials.nick:
+            MNetwork.nick:
                 default: false
                 description: "Change your or others name"
                 children:
-                    essentials.nick.use:
+                    MNetwork.nick.use:
                         default: op
                         description: "Change self nickname"
-                    essentials.nick.other:
+                    MNetwork.nick.other:
                         default: op
                         description: "Change others name"
-            essentials.nuke:
+            MNetwork.nuke:
                 defualt: false
                 description: "Spawn a thin carpet of bomb"
                 children:
-                    essentials.nuke.use:
+                    MNetwork.nuke.use:
                         default: op
                         description: "Spawn a thin carpet of bomb"
-                    essentials.nuke.other:
+                    MNetwork.nuke.other:
                         default: op
                         description: "Allow to spawn a nuke on other player's position"
-            essentials.oversizedstacks:
+            MNetwork.oversizedstacks:
                 default: op
                 description: "Allow to get oversized stacks"
-            essentials.pay:
+            MNetwork.pay:
                 default: true
                 description: "Pay another player from your balance"
-            essentials.powertool:
+            MNetwork.powertool:
                 default: false
                 description: "Allow to toggle and use PowerTool"
                 children:
-                    essentials.powertool.use:
+                    MNetwork.powertool.use:
                         default: op
                         description: "Access the /powertool command"
-                    essentials.powertool.append:
+                    MNetwork.powertool.append:
                         default: op
                         description: "Let you add multiple commands to the PowerTool"
-            essentials.powertooltoggle:
+            MNetwork.powertooltoggle:
                 default: op
                 description: "Allow to disable PowerTool from all the items (of a player)"
-            essentials.ptime:
+            MNetwork.ptime:
                default: false
                description: "Change your current time!"
                children:
-                    essentials.ptime.use:
+                    MNetwork.ptime.use:
                         default: op
                         description: "Change your own time"
-                    essentials.ptime.other:
+                    MNetwork.ptime.other:
                         default: op
                         description: "Change other's time"
-            essentials.pvp:
+            MNetwork.pvp:
                 default: op
                 description: "Toggle PvP on/off"
-            essentials.realname:
+            MNetwork.realname:
                 default: op
                 description: "See a player's realname"
-            essentials.repair:
+            MNetwork.repair:
                 default: false
                 description: "Repair the item you're holding"
                 children:
-                    essentials.repair.use:
+                    MNetwork.repair.use:
                         default: op
                         description: "Access the /repair command"
-                    essentials.repair.all:
+                    MNetwork.repair.all:
                         default: op
                         description: "Let you repair all the damaged tools/armors on your inventory"
-                    essentials.repair.armor:
+                    MNetwork.repair.armor:
                         default: op
                         description: "Let your repair the equiped armor while using /repair all"
-            essentials.reply:
+            MNetwork.reply:
                 default: true
                 description: "Allow the player to quick reply to the last player that messaged him"
-            essentials.seen:
+            MNetwork.seen:
                 default: op
                 description: "Check player's last online time"
-            essentials.sell:
+            MNetwork.sell:
                 default: true
                 description: "Sell an item with the /sell command"
-            essentials.sethome:
+            MNetwork.sethome:
                 default: true
                 description: "Create/update a home"
-            essentials.setspawn:
+            MNetwork.setspawn:
                 default: op
                 description: "Change your server's general spawn"
-            essentials.setwarp:
+            MNetwork.setwarp:
                 default: op
                 description: "Create/update a warp"
-            essentials.setworth:
+            MNetwork.setworth:
                 default: op
                 description: "Sets the worth of an item"
-            essentials.sign:
+            MNetwork.sign:
                 default: false
                 description: "Allow to manage special signs"
                 children:
-                    essentials.sign.break:
+                    MNetwork.sign.break:
                         default: false
                         description: "Allow to remove special signs"
                         children:
-                            essentials.sign.break.free:
+                            MNetwork.sign.break.free:
                                 default: op
                                 description: "Allow to remove Free signs"
-                            essentials.sign.break.gamemode:
+                            MNetwork.sign.break.gamemode:
                                 default: op
                                 description: "Allow to remove Gamemode signs"
-                            essentials.sign.break.heal:
+                            MNetwork.sign.break.heal:
                                 default: op
                                 description: "Allow to remove heal signs"
-                            essentials.sign.break.kit:
+                            MNetwork.sign.break.kit:
                                 default: op
                                 description: "Allow to remove kit signs"    
-                            essentials.sign.break.repair:
+                            MNetwork.sign.break.repair:
                                 default: op
                                 description: "Allow to remove repair signs"
-                            essentials.sign.break.time:
+                            MNetwork.sign.break.time:
                                 default: op
                                 description: "Allow to remove Time signs"
-                            essentials.sign.break.teleport:
+                            MNetwork.sign.break.teleport:
                                 default: op
                                 description: "Allow to remove Teleport signs"
-                            essentials.sign.break.warp:
+                            MNetwork.sign.break.warp:
                                 default: op
                                 description: "Allow to remove Warp signs"
-                    essentials.sign.color:
+                    MNetwork.sign.color:
                         default: op
                         description: "Allow to create colored signs"
-                    essentials.sign.create:
+                    MNetwork.sign.create:
                         default: false
                         description: "Allow to create special signs"
                         children:
-                            essentials.sign.create.free:
+                            MNetwork.sign.create.free:
                                 default: op
                                 description: "Allow to create Free signs"
-                            essentials.sign.create.gamemode:
+                            MNetwork.sign.create.gamemode:
                                 default: op
                                 description: "Allow to create Gamemode signs"
-                            essentials.sign.create.heal:
+                            MNetwork.sign.create.heal:
                                 default: op
                                 description: "Allow to create Heal signs"
-                            essentials.sign.create.kit:
+                            MNetwork.sign.create.kit:
                                 default: op
                                 description: "Allow to create Kit signs"
-                            essentials.sign.create.repair:
+                            MNetwork.sign.create.repair:
                                 default: op
                                 description: "Allow to create Repair signs"
-                            essentials.sign.create.time:
+                            MNetwork.sign.create.time:
                                 default: op
                                 description: "Allow to create Time signs"
-                            essentials.sign.create.teleport:
+                            MNetwork.sign.create.teleport:
                                 default: op
                                 description: "Allow to create Teleport signs"
-                            essentials.sign.create.warp:
+                            MNetwork.sign.create.warp:
                                 default: op
                                 description: "Allow to create Warp signs"
-                    essentials.sign.use:
+                    MNetwork.sign.use:
                         default: false
                         description: "Allow to use special signs"
                         children:
-                            essentials.sign.use.free:
+                            MNetwork.sign.use.free:
                                 default: op
                                 description: "Allow to use Free signs"
-                            essentials.sign.use.gamemode:
+                            MNetwork.sign.use.gamemode:
                                 default: op
                                 description: "Allow to use Gamemode signs"
-                            essentials.sign.use.heal:
+                            MNetwork.sign.use.heal:
                                 default: op
                                 description: "Allow to use Heal signs"
-                            essentials.sign.use.kit:
+                            MNetwork.sign.use.kit:
                                 default: op
                                 description: "Allow to use Kit signs"
-                            essentials.sign.use.repair:
+                            MNetwork.sign.use.repair:
                                 default: op
                                 description: "Allow to use Repair signs"
-                            essentials.sign.use.time:
+                            MNetwork.sign.use.time:
                                 default: op
                                 description: "Allow to use Time signs"
-                            essentials.sign.use.teleport:
+                            MNetwork.sign.use.teleport:
                                 default: op
                                 description: "Allow to use Teleport signs"
-                            essentials.sign.use.warp:
+                            MNetwork.sign.use.warp:
                                 default: op
                                 description: "Allow to use Warp signs"
-            essentials.spawn:
+            MNetwork.spawn:
                 default: false
                 description: "Teleport to server's main spawn"
                 children:
-                    essentials.spawn.use:
+                    MNetwork.spawn.use:
                         default: true
                         description: "Teleport to server's spawn position"
-                    essentials.spawn.other:
+                    MNetwork.spawn.other:
                         default: op
                         description: "Teleport others to the server's main spawn"
-            essentials.sudo:
+            MNetwork.sudo:
                 default: false
                 description: "Run a command as another player"
                 children:
-                    essentials.sudo.use:
+                    MNetwork.sudo.use:
                         default: op
                         description: "Run a command as another player"
-                    essentials.sudo.exempt:
+                    MNetwork.sudo.exempt:
                         default: false
                         description: "Prevent from being Sudo'ed"
-            essentials.suicide:
+            MNetwork.suicide:
                 default: op
                 description: "Kill yourself"
-            essentials.tpa:
+            MNetwork.tpa:
                 default: true
                 description: "Request a player to teleport to its position"
-            essentials.tpaccept:
+            MNetwork.tpaccept:
                 default: true
                 description: "Accept a Teleport Request"
-            essentials.tpahere:
+            MNetwork.tpahere:
                 default: true
                 description: "Request a player to teleport to your position"
-            essentials.tpall:
+            MNetwork.tpall:
                 default: op
                 description: "Teleport all the online players to you"
-            essentials.tpdeny:
+            MNetwork.tpdeny:
                 default: true
                 description: "Decline a Teleport Request"
-            essentials.tphere:
+            MNetwork.tphere:
                 default: op
                 description: "Teleport another player to you"
-            essentials.tempban:
+            MNetwork.tempban:
                 default: op
                 description: "Temporary bans a player"
-            essentials.top:
+            MNetwork.top:
                 default: op
                 description: "Teleport to the highest block above you"
-            essentials.tree:
+            MNetwork.tree:
                 default: op
                 description: "Spawns a tree"
-            essentials.unlimited:
+            MNetwork.unlimited:
                 default: false
                 description: "Allow the player to place unlimited blocks"
                 children:
-                    essentials.unlimited.use:
+                    MNetwork.unlimited.use:
                         default: op
                         description: "Access the /unlimited command"
-                    essentials.unlimited.other:
+                    MNetwork.unlimited.other:
                         default: op
                         description: "Allow to enable unlimited placing of blocks to other players"
-            essentials.update:
+            MNetwork.update:
                 default: false
-                description: "Allow to update EssentialsPE to the latest available version, or to check if there is one available"
+                description: "Allow to update MNetworkPE to the latest available version, or to check if there is one available"
                 children:
-                    essentials.update.use:
+                    MNetwork.update.use:
                         default: op
-                        description: "Allow to update EssentialsPE with the '/essentials update' command "
-                    essentials.update.notify:
+                        description: "Allow to update MNetworkPE with the '/MNetwork update' command "
+                    MNetwork.update.notify:
                         default: op
-                        description: "Get notified when a new version of EssentialsPE if found"
-            essentials.vanish:
+                        description: "Get notified when a new version of MNetworkPE if found"
+            MNetwork.vanish:
                 default: false
                 description: "Hide yourself or another player"
                 children:
-                    essentials.vanish.use:
+                    MNetwork.vanish.use:
                         default: op
                         description: "Hide yourself from other players"
-                    essentials.vanish.other:
+                    MNetwork.vanish.other:
                         default: op
                         description: "Hide other players"
-                    essentials.vanish.pvp:
+                    MNetwork.vanish.pvp:
                         default: op
                         description: "Let you attack other players while you're vanished"
-            essentials.warp:
+            MNetwork.warp:
                 default: false
                 description: "Teleport to a warp"
                 children:
-                    essentials.warp.use:
+                    MNetwork.warp.use:
                         default: true
                         description: "Teleport to a warp"
-                    essentials.warp.other:
+                    MNetwork.warp.other:
                         default: op
                         description: "Teleport other players to a warp"
-            essentials.whois:
+            MNetwork.whois:
                 default: true
                 description: "Display information about a player"
-            essentials.world:
+            MNetwork.world:
                 default: op
                 description: "Teleport to another world"
-            essentials.worth:
+            MNetwork.worth:
                 default: true
                 description: "Get the price of an item"
