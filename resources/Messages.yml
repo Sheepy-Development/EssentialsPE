@@ -8,8 +8,8 @@ version: 2.0.0
 messages:
   afk:
     self:
-      enable: "&eYou're now AFK"
+      enable: "&bYou're now AFK, You are safe from PvP! #CyroPE"
       disable: "&eYou're no longer AFK"
     other:
-      enable: "&e@player is now AFK"
-      disable: "&e@player is no longer AFK"
+      enable: "&d@player &bis not playing CyroPE for now! #AFK"
+      disable: "&d@player is no longer AFK, have more fun at CyroPE!"
